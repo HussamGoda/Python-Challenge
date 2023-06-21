@@ -30,19 +30,18 @@ with open(csv_electiondata_file_location, encoding='UTF-8') as csvfile:
      for entries in entries_in_file:
         print(entries) 
         list_of_entries.append(entries)
-
-#total number of votes
+        
 total_number_of_votes = len(list_of_entries)
-#print(total_number_of_votes)
+print(total_number_of_votes)
 x = int(total_number_of_votes)
 
 #Finding total number of candidates and thier names. Store names in List: candidates
 for i in range(0, x):
     if list_of_entries[i][2] not in  candidates:
        candidates.append (list_of_entries[i][2])
-#print(candidates)
+print(candidates)
 total_number_of_candidates = len(candidates)
-#print(str(total_number_of_candidates))
+print(str(total_number_of_candidates))
 y=int(total_number_of_candidates)
 
 
@@ -54,7 +53,7 @@ for i in range(0, y):
            counter = counter + 1
     total_votes_for_each_candidate.append(counter)
 
-#print(str(Total_votes_for_each_candidate))
+print(str(Total_votes_for_each_candidate))
 
 #calculate ratio of total vote for each candidate and store in List: vote_percent_for_each_candidate
 for i in range(0, y):
@@ -70,7 +69,7 @@ for i in range(0, y):
        maximum_vote_percent = vote_percent_for_each_candidate[i]
        winner_location_on_list = i
 
-#print(str(candidates[winner_location_on_list]))
+print(str(candidates[winner_location_on_list]))
 
 #print to terminal
 print("\nElection Results\n")

@@ -43,7 +43,7 @@ for y in range(1, y):
         greatsest_decrease_in_profit = change
         location_for_date_loss = y
     # the command below is commented as it is not part of Challenge final requiremnts
-    #print(str(change_profit_loss[y-1]))
+    print(str(change_profit_loss[y-1]))
 
 number_changes_over_period = y
 average_change_over_period = round (total_change_over_period / y, 2)
