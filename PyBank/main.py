@@ -16,7 +16,8 @@ with open(csv_budgetdata_file_location, encoding='UTF-8') as csvfile:
     #finding header and printing to terminal
     header_in_file = next(entries_in_file)
     print(f"This is the header in the file: {header_in_file}")
-    #storing entries in List: list_of_entries
+
+    #priniting entries in file in terminal and storing entries in List: list_of_entries
     for entries in entries_in_file:
         print(entries)
         list_of_entries.append(entries)
@@ -52,7 +53,7 @@ date_for_greatest_decrease =str(list_of_entries[location_for_date_loss][0])
 
 
 #writing final analysis to the terminal
-print("Financial Analysis\n")
+print("\nFinancial Analysis\n")
 print("---------------------------------\n")
 print("Total Months: " + str(total_months) + "\n")
 print("Total: $" + str(net_total_amount) +" \n")

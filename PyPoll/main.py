@@ -26,7 +26,7 @@ with open(csv_electiondata_file_location, encoding='UTF-8') as csvfile:
      print(f"This is the header in the file: {header_in_file}")
      
 
-     # Store entries in List: list_of_entries
+     # printing entires in file in terminal and Storing entries in List: list_of_entries
      for entries in entries_in_file:
         print(entries) 
         list_of_entries.append(entries)
